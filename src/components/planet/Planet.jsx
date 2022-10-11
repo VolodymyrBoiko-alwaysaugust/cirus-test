@@ -40,15 +40,11 @@ function Planet() {
   // });
   
 
-  const [daymapT, nightmapT, moonT, iconBTC, orb_albedo, orb_emissive, orb_normal, orb_roughness, tt] = useLoader(TextureLoader, [
+  const [daymapT, nightmapT, moonT, iconBTC, tt] = useLoader(TextureLoader, [
     '8k_earth_daymap.jpeg',
     '8k_earth_nightmap.jpeg',
     '8k_moon.jpeg',
     'BTC-icon.png',
-    'orb/orb_albedo.png',
-    'orb/orb_emissive.png',
-    'orb/orb_normal.png',
-    'orb/orb_roughness.png',
     'Comp/Comp_00001.png',
   ]);
 
