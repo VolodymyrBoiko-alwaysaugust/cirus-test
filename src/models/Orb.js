@@ -26,7 +26,7 @@ export function Orb(props) {
     // materials[""].color.set('#ff315e') 
     // materials[''].metalness = 0.5
     // materials[''].lightMapIntensity = 0.2
-    // materials[''].map = orb_albedo;
+    //materials[''].map = orb_albedo;
     // materials[''].roughnessMap = orb_roughness;
     // materials[''].roughness = 0
     // materials[''].normalMap = orb_normal;
@@ -35,11 +35,23 @@ export function Orb(props) {
     console.log("nodes ", nodes);
   }, [materials])
 
+  useLayoutEffect(() => {
+    // materials[""].color.set('#ff315e') 
+    // materials[''].metalness = 0.5
+    // materials[''].lightMapIntensity = 0.2
+    nodes.Sphere_Sphere001.material.map = orb_albedo;
+    // materials[''].roughnessMap = orb_roughness;
+    // materials[''].roughness = 0
+    // materials[''].normalMap = orb_normal;
+    // materials[''].emissiveMap = orb_emissive;
+    console.log("materials ", materials);
+    console.log("nodes ", nodes);
+  }, [nodes])
 
   return (
     <group {...props} dispose={null} scale={0.12}>
       <mesh geometry={nodes.Sphere_Sphere001.geometry} material={nodes.Sphere_Sphere001.material} >
-        <meshStandardMaterial map={orb_albedo} attach="material" />
+        {/* <meshStandardMaterial map={orb_albedo} normalMap={orb_normal} roughnessMap={orb_roughness} emissiveMap={orb_emissive} /> */}
       </mesh>
     </group>
   )
@@ -47,7 +59,7 @@ export function Orb(props) {
 
 useGLTF.preload('/orb/orb.gltf')
 useGLTF.preload('/orb/orb_albedo.png')
-useGLTF.preload('/orb_emissive.png')
+useGLTF.preload('/orb/orb_emissive.png')
 useGLTF.preload('/orb/orb_normal.png')
 useGLTF.preload('/orb/orb_roughness.png')
 
