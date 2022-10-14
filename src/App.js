@@ -26,14 +26,15 @@ function App() {
           <ScrollControls
             pages={3}
           >
-            <ambientLight intensity={0.4}/>
+            {/* <ambientLight intensity={0.5}/> */}
             {/* <light intensity={1} color="white" position={[-10000, 1000, 1000]} /> */}
             {/* <rectAreaLight position={[0, 0, 10]} intensity={4} width={5} height={10} color='0xffffff'/> */}
             {/* <directionalLight intensity={0.5} position={[-10000, 5000, 10000]} color='white'/> */}
             {/* <directionalLight intensity={0.5} position={[-15000, 0, 10000]} color='white' />
             <directionalLight intensity={0.5} position={[-10000, -5000, 10000]} color='white' /> */}
-            {/* <pointLight position={[-1000,100,1000]} intensity={0.5}/> */}
-            <spotLight angle={1} position={[-10000, 5000, 10000]} intensity={1}/>
+            {/* <pointLight position={[-20,1,15]} intensity={1} corr/> */}
+            <hemisphereLight position={[-20, 1, 15]} intensity={0.8} />
+            <spotLight angle={1} penumbra={0} position={[-20, 1, 15]} intensity={0.6}/>
             {/* <ContactShadows renderOrder={2} frames={1} resolution={1024} scale={120} blur={2} opacity={0.6} far={100} /> */}
             <PerspectiveCamera makeDefault args={[45, width / height, 0.1, 5000]} position={[0,0,10]}/>
             {/* <OrbitControls/> */}
