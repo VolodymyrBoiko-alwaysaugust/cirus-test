@@ -40,15 +40,18 @@ function Planet() {
   // });
   
 
-  const [daymapT, nightmapT, moonT, iconBTC, tt] = useLoader(TextureLoader, [
-    '8k_earth_daymap.jpeg',
-    '8k_earth_nightmap.jpeg',
+  // const [daymapT, nightmapT, moonT, iconBTC, tt] = useLoader(TextureLoader, [
+  //   '8k_earth_daymap.jpeg',
+  //   '8k_earth_nightmap.jpeg',
+  //   '8k_moon.jpeg',
+  //   'BTC-icon.png',
+  //   'Comp/Comp_00001.png',
+  // ]);
+  const [moonT] = useLoader(TextureLoader, [
     '8k_moon.jpeg',
-    'BTC-icon.png',
-    'Comp/Comp_00001.png',
   ]);
 
-  console.log("TT ", tt);
+
 
   useFrame((state, delta) => {
     //planetRef.current.rotation.y += 0.01;
