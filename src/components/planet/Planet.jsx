@@ -45,9 +45,9 @@ function Planet() {
       node.material.emissiveMap = orb_emissive;
       node.material.normalMap = orb_normal;
       node.material.roughnessMap = orb_roughness;
-      node.material.roughness = 2.7;
-      node.material.metalness = 0.1;
-      node.material.needsUpdate = true
+      // node.material.roughness = 2.7;
+      // node.material.metalness = 0.1;
+      // node.material.needsUpdate = true
       console.log("Node ", node);
       //node.geometry.computeVertexNormals();
     }

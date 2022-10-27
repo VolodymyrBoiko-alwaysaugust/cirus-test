@@ -1,7 +1,7 @@
 import './App.css';
 import { Canvas } from '@react-three/fiber';
 import { Environment, Lightformer, ContactShadows, OrbitControls, PerspectiveCamera, ScrollControls, Scroll, Html, Image } from '@react-three/drei'
-import Planet from './components/planet/Planet';
+import Planet from './components/planet/PlanetGSAP';
 import { Suspense, useEffect, useState } from 'react';
 import { MathUtils, NoToneMapping } from 'three';
 import Portal from './components/portal/Portal';

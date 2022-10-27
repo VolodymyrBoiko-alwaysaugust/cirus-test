@@ -85,12 +85,12 @@ function Planet() {
   const currentFrame = (i) => {
     let img;
     if (i + 1 < 10) {
-      img = `/Comp/Comp_0000${i + 1}.png`;
+      img = `/CompW2/Comp_0000${i + 1}.webp`;
     } else {
       if (i + 1 >= 10 && i + 1 < 100) {
-        img = `/Comp/Comp_000${i + 1}.png`;
+        img = `/CompW2/Comp_000${i + 1}.webp`;
       } else {
-        img = `/Comp/Comp_00${i + 1}.png`;
+        img = `/CompW2/Comp_00${i + 1}.webp`;
       }
     }
     return img;
